@@ -1,0 +1,20 @@
+# Boilerplate React + TS Clean Arch
+
+## Resources:books:
+Read or watch:
+* [React](https://beta.reactjs.org)
+
+---
+## Learning Objectives:bulb:
+What you should learn from this project:
+
+* Usage of global states with Redux Toolkit
+* Apply concepts of Clean Architecture in Frontend projects 
+* Usage of Components
+* Usage of Utilities
+
+---
+---
+
+## Author
+* **Wilder Rincon** - [wildsrincon](https://github.com/wildsrincon)
