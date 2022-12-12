@@ -3,6 +3,7 @@
 ## Resources:books:
 Read or watch:
 * [React](https://beta.reactjs.org)
+* [Clean Architecture](https://indiedev.medium.com/clean-architecture-in-frontend-react-redux-typescript-bd108ddd13f7)
 
 ---
 ## Learning Objectives:bulb:
