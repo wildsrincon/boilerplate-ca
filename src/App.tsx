@@ -11,7 +11,7 @@ function App() {
       <Home />
       {JSON.stringify(user)}
     </>
-  );
+  )
 }
 
 export default App;
