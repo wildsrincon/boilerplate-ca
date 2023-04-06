@@ -2,7 +2,7 @@ import {  Layout } from '@/styled-components'
 import { CreateUserBtn, ModifyUserBtn, ResetUserBtn } from './components';
 import { HomeTitle } from './styled';
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <Layout>

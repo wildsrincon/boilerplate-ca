@@ -1,17 +1,31 @@
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import './App.css';
-import { Home } from './pages';
 import { AppStore } from './redux/store';
+import './App.css';
 
-function App() {
+import { Home, NotFound } from './pages';
+
+
+export function App() {
   const user = useSelector((state: AppStore) => state.user);
 
   return (
     <>
-      <Home />
-      {JSON.stringify(user)}
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        {JSON.stringify(user)}
+      </div>
     </>
   )
 }
 
-export default App;
+export function WrappedApp() {
+  return (
+    <HashRouter>
+      <App />
+    </HashRouter>
+  );
+}
