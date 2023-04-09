@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { modifyUser } from '@/redux/slices/user.slice';
 
-export default function ModifyUserBtn() {
+export default function ModifyUserBtn(): JSX.Element {
   const dispatch = useDispatch();
 
-  const dispatchActions = () => {
+  const dispatchActions = (): void => {
     dispatch(modifyUser({ name: 'Wilds Rincon', id: 1 }));
   };
 

@@ -4,12 +4,11 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
+    'standard-with-typescript',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -21,7 +20,10 @@ module.exports = {
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 0,
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

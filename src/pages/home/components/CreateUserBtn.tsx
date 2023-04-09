@@ -5,19 +5,19 @@ import { createUser } from '@/redux/slices/user.slice';
 import { fetchMorty, rickAndMortyUrl } from '../services/api.service';
 import type { AppDispatch } from '@/redux/store';
 
-export default function CreateUserBtn() {
+export default function CreateUserBtn(): JSX.Element {
   const dispatch = useDispatch<AppDispatch>();
   const [morty, setMorty] = useState(UserEmptyState);
-  const getCharacter = async () => {
+  const getCharacter = async (): Promise<void> => {
     const result = await fetchMorty(rickAndMortyUrl);
     setMorty(result);
   };
 
   useEffect(() => {
-    getCharacter();
+    void getCharacter();
   }, []);
 
-  const dispatchActions = () => {
+  const dispatchActions = (): void => {
     dispatch(createUser(morty));
   };
 

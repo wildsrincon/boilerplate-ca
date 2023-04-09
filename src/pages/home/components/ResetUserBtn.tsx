@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux';
 import { resetUser } from '@/redux/slices/user.slice';
 
-export default function ResetUserBtn() {
+export default function ResetUserBtn(): JSX.Element {
   const dispatch = useDispatch();
 
-  const dispatchActions = () => {
+  const dispatchActions = (): void => {
     dispatch(resetUser());
   };
 

@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import { configureStore } from '@reduxjs/toolkit';
-import { User } from '@/models';
+import { type User } from '@/models';
 import { userReducer } from './slices';
 
 export interface AppStore {

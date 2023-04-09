@@ -1,11 +1,11 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { AppStore } from './redux/store';
+import { type AppStore } from './redux/store';
 import './App.css';
 
 import { Home, NotFound } from './pages';
 
-export function App() {
+export function App(): JSX.Element {
   const user = useSelector((state: AppStore) => state.user);
 
   return (
@@ -19,7 +19,7 @@ export function App() {
   );
 }
 
-export function WrappedApp() {
+export function WrappedApp(): JSX.Element {
   return (
     <HashRouter>
       <App />
