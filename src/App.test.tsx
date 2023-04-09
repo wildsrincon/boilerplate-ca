@@ -20,7 +20,7 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 1,
       })
-    ).toHaveTextContent('Home Pages');
+    ).toHaveTextContent('Home Page');
   });
 
   it('Renders not found if invalid path', () => {
