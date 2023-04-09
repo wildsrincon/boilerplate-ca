@@ -1,4 +1,4 @@
-import { HomeAdapter } from '../adapter';
+import { HomeAdapter } from '../adapter/home.adapter';
 
 export const rickAndMortyUrl = 'https://rickandmortyapi.com/api/character/2';
 

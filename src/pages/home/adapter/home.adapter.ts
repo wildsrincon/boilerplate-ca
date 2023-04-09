@@ -1,6 +1,7 @@
+/* eslint-disable import/prefer-default-export */
 import { ApiUser, User } from '../../../models/user.model';
 
-const HomeAdapter = (user: ApiUser): User => {
+export const HomeAdapter = (user: ApiUser): User => {
   return {
     id: user.id,
     name: user.name,
@@ -8,5 +9,3 @@ const HomeAdapter = (user: ApiUser): User => {
     species: user.species,
   };
 };
-
-export default HomeAdapter;
