@@ -1,5 +1,5 @@
+import { useDispatch } from 'react-redux';
 import { resetUser } from '@/redux/slices/user.slice';
-import { useDispatch } from "react-redux"
 
 export default function ResetUserBtn() {
   const dispatch = useDispatch();
@@ -8,8 +8,9 @@ export default function ResetUserBtn() {
     dispatch(resetUser());
   };
 
-
   return (
-    <button onClick={dispatchActions}>Dispatch Reset Action</button>
-  )
+    <button type="button" onClick={dispatchActions}>
+      Dispatch Reset Action
+    </button>
+  );
 }

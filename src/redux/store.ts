@@ -1,5 +1,6 @@
-import { User } from '@/models';
+/* eslint-disable import/extensions */
 import { configureStore } from '@reduxjs/toolkit';
+import { User } from '@/models';
 import { userReducer } from './slices';
 
 export interface AppStore {
@@ -12,8 +13,7 @@ export const store = configureStore({
   },
 });
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch 
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export { userReducer };
-

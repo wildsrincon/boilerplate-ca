@@ -1,9 +1,9 @@
-import { UserEmptyState } from "@/models";
-import { createUser } from "@/redux/slices/user.slice"
-import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux"
-import { fetchMorty, rickAndMortyUrl } from "../services/api.service";
-import type { AppDispatch } from "@/redux/store";
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { UserEmptyState } from '../../../models';
+import { createUser } from '@/redux/slices/user.slice';
+import { fetchMorty, rickAndMortyUrl } from '../services/api.service';
+import type { AppDispatch } from '@/redux/store';
 
 export default function CreateUserBtn() {
   const dispatch = useDispatch<AppDispatch>();
@@ -15,15 +15,15 @@ export default function CreateUserBtn() {
 
   useEffect(() => {
     getCharacter();
-  }, [])
-  
+  }, []);
 
   const dispatchActions = () => {
     dispatch(createUser(morty));
   };
 
-
   return (
-    <button onClick={dispatchActions}>Dispatch Create Action</button>
-  )
+    <button type="button" onClick={dispatchActions}>
+      Dispatch Create Action
+    </button>
+  );
 }
