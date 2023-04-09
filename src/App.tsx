@@ -9,13 +9,13 @@ export function App() {
   const user = useSelector((state: AppStore) => state.user);
 
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {JSON.stringify(user)}
-    </div>
+    </>
   );
 }
 
