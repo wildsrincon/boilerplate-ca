@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --run",
     "check-types": "npx tsc --pretty --noEmit",
     "check-format": "npx prettier --check .",
     "check-lint": "npx eslint . --ext ts --ext tsx --ext js",
