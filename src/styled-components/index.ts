@@ -1,2 +1,2 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { Layout } from './layout.styled';
+export { Layout } from './layout.styled';
+export { HomeTitle } from './title.styled';

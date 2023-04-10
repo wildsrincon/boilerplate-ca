@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { modifyUser } from '@/redux/slices/user.slice';
+import { ButtonDispatch } from '@/styled-components/btnDispatch.styled';
 
 export default function ModifyUserBtn(): JSX.Element {
   const dispatch = useDispatch();
@@ -9,8 +10,8 @@ export default function ModifyUserBtn(): JSX.Element {
   };
 
   return (
-    <button type="button" onClick={dispatchActions}>
+    <ButtonDispatch type="button" onClick={dispatchActions}>
       Dispatch Modify Action
-    </button>
+    </ButtonDispatch>
   );
 }

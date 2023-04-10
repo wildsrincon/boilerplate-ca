@@ -1,3 +1,4 @@
+import { ButtonDispatch } from '@/styled-components/btnDispatch.styled';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { UserEmptyState } from '../../../models';
@@ -22,8 +23,8 @@ export default function CreateUserBtn(): JSX.Element {
   };
 
   return (
-    <button type="button" onClick={dispatchActions}>
+    <ButtonDispatch type="button" onClick={dispatchActions}>
       Dispatch Create Action
-    </button>
+    </ButtonDispatch>
   );
 }
