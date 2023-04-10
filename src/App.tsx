@@ -4,7 +4,6 @@ import { type AppStore } from './redux/store';
 import './App.css';
 
 import { Home, NotFound } from './pages';
-import { ErrorBoundary } from './utils/ErrorBoundary';
 
 export function App(): JSX.Element {
   const user = useSelector((state: AppStore) => state.user);
